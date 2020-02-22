@@ -3,8 +3,14 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
-
-ReactDOM.render(<App />, document.getElementById('root'));
+import 'bootswatch/dist/yeti/bootstrap.min.css';
+import NoteProvider from './context/NoteProvider';
+ReactDOM.render(
+  <NoteProvider>
+    <App />
+  </NoteProvider>,
+  document.getElementById('root')
+);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
