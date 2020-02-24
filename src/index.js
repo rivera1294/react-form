@@ -4,11 +4,9 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import 'bootswatch/dist/yeti/bootstrap.min.css';
-import NoteProvider from './context/NoteProvider';
+
 ReactDOM.render(
-  <NoteProvider>
-    <App />
-  </NoteProvider>,
+  <App />,
   document.getElementById('root')
 );
 
